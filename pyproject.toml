@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "d208"
+version = "0.1.0"
+description = "Predictive Modeling"
+authors = ["Isaac Winters <IsaacMcPheeWinters@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.3"
+pandas = "^2.2.0"
+statsmodels = "^0.14.1"
+scikit-learn = "^1.4.0"
+scipy = "^1.12.0"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
