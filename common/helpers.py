@@ -4,6 +4,10 @@ import math
 class Helpers:
 
     @staticmethod
+    def get_values(df: pd.DataFrame, column) -> list:
+        return list(df[column].unique())
+
+    @staticmethod
     def one_hot_encode(df: pd.DataFrame, column:str) -> pd.DataFrame:
         """
         This transforms a categorical variable to a dataframe of bit values, then merges that with the starting dataframe.
